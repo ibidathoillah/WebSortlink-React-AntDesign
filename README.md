@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ShortLink Dashboard
+### Fullstack url shortener
+
+Create simple bit.ly clone with some rules :
+
+- the output link should be unique and random by default
+- maximum generated links (last path) is 10 chartacters
+- user can request custom name (link) if available
+- Simple admin page to get informations regarding generated links
+- Authentication for admin page
+
+### Tech stack
+
+- react js
+- Mongodb
+- node js (can use framework like nextjs or nestjs or any other nodejs framework
+
+# See Also Shorlink Backend
+https://github.com/ibidathoillah/shortlink-backend
 
 ## Getting Started
 
