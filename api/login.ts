@@ -11,6 +11,7 @@ export class UserForm {
 }
 
 export async function doLogin (user:UserForm) : Promise<any> {
+    
     try {
         const res = await axios.post(`${APIShortLink.baseUrl}/auth/login`, user);
         if (res.status == 201) {
@@ -23,7 +24,12 @@ export async function doLogin (user:UserForm) : Promise<any> {
         throw new Error(res.toString())
     }
     catch (err) {
-        message.error(`Login failed`);
+        let res = err.response
+        if(res && res.status==401){
+            message.error(res.data.message)
+        } else {
+            message.error(`Login failed`);
+        }
         return err;
     }
 }
