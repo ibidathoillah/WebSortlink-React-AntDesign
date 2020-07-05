@@ -1,6 +1,6 @@
 export const APIShortLink = {
     get baseUrl(){
-        return process.env.apiUrl
+        return process.env.API_URL
     },
     get headers() {
         return {

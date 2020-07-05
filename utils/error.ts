@@ -11,6 +11,6 @@ export function catchErr(err: any) {
     }
 
     // error hanlding
-    process.env.debug=='true' ? console.log(err) : null
+    process.env.DEBUG=='true' ? console.log(err) : null
     
 }

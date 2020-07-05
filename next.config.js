@@ -8,7 +8,7 @@ module.exports = {
         cssModules: false,
     })),
     env: {
-        apiUrl: 'http://localhost:8000',
-        debug: 'true',
+        API_URL: 'http://localhost:8000',
+        DEBUG: 'true',
     },
 }
