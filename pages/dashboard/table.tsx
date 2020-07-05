@@ -147,7 +147,7 @@ const EditableTable = ({originData}) => {
       defaultSortOrder: 'descend',
       sorter: (a, b) => moment(a.createdAt).unix() - moment(b.createdAt).unix(),
       render:(_, record) => {
-        return moment(record.dateToFormat).format("DD/MM/YYYY HH:mm:ss")
+        return moment(record.createdAt).format("DD/MM/YYYY HH:mm:ss")
       }
     },
     {
