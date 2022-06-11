@@ -1,7 +1,7 @@
 # ShortLink Dashboard
 ### Fullstack url shortener
 
-Create simple bit.ly clone with some rules :
+Website bit.ly clone with features:
 
 - the output link should be unique and random by default
 - maximum generated links (last path) is 10 chartacters
